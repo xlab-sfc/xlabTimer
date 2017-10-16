@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tacptac.xlabtimer.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/timer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/plus10s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+10s"/>
+        <Button
+            android:id="@+id/plus1m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1m"/>
+        <Button
+            android:id="@+id/minus10s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-10s"/>
+        <Button
+            android:id="@+id/minus1m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1m"/>
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
